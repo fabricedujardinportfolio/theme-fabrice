@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri();?>">
 </head>
 <body>
-    <h1><?php the_title();?></h1>
+<!-- Crée une boucle  -->
+<!-- afficher l'ensemble des fichier de la page article -->
+<?php while(have_posts()) : the_post() ;?><!-- Si il y a des article alors affiche des articles -->
+    <h1><?php the_title(); ?></h1>
+    <?php the_content(); ?>
+    <?php endwhile;?><!-- Une boucle while se fini toujour par un endwhile -->
 </body>
 </html>
