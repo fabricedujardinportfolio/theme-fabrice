@@ -1,3 +1,56 @@
+/* 
+Théme name : théme NC Fabrice
+Author : Fabrice
+Description: Théme exercise de fabrice pour la cci 
+Theme URI: https://fabricedujardinportfolio.github.io/
+Version: 0.1
+*/
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+footer{
+    margin-top:20px;
+    background-color: #eee;
+    padding: 20px;
+}
+footer p{
+text-align: center;
+}
+
+/* header */
+/* Secteur de classe qui vas chercher la classe dynamique commençant pas menu- */
+div[class^="menu-"]{
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.menu{
+    padding:0;
+    margin:auto;
+    text-align: center;
+    text-transform: none;
+}
+.menu .menu-item{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu .menu-item a, main article a{
+    text-transform: none;
+    color: #333;
+}
+
+.menu .menu-item a:link, main article a:link{
+    text-decoration: none;
+}
+.menu .menu-item a:active{
+    text-decoration: underline;
+}
+.menu .menu-item a:hover, main article a:hover{
+    text-decoration:underline;
 }
